@@ -1,0 +1,24 @@
+[package]
+name = "top-1000-harvaster"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# get information from websites
+thirtyfour = "*"
+# async functions
+tokio = "*"
+# requirements for converting stuff
+serde = { version = "1.0", features = ["derive"] }
+# save data to json
+serde_json = "*"
+# get the pernunciation of words
+google_translate_tts = "0.1.2"
+# convert binary code to base64 to save in the json file
+base64 = "0.13.0"
+# donwload the audio files
+curl = "0.4.43"
+# to join futures
+futures = "0.3"
